@@ -1,0 +1,121 @@
+<html> 
+<body> 
+<head> 
+<title>FORM VALIDATION </title> 
+</head> 
+<script language="javascript"> 
+function fd() 
+{ 
+if(document.fn.fin.value=="") 
+{ 
+alert("Enter your first name"); 
+document.fn.fin.focus(); 
+return false; 
+} 
+else 
+if(document.fn.ln.value=="") 
+{ 
+alert("Enter your  last name"); 
+document.fn.ln.focus(); 
+return false; 
+} 
+else 
+if(document.fn.gender[0].checked==false && document.fn.gender[1].checked==false) 
+{ 
+alert("Determine  ur gender"); 
+document.fn.gender.focus(); 
+return false; 
+} 
+else 
+if(document.fn.add.value=="") 
+{ 
+alert("Enter your  address"); 
+document.fn.add.focus(); 
+return false; 
+} 
+else 
+if(document.fn.pass.value=="") 
+{ 
+alert("Enter your  password"); 
+document.fn.pass.focus(); 
+return false; 
+} 
+else 
+if(document.fn.rpass.value=="") 
+{ 
+alert("  Retype your password"); 
+document.fn.rpass.focus(); 
+return false; 
+} 
+ else 
+if(document.fn.rpass.value!=document.fn.pass.value) 
+{ 
+alert("Password doesn't match "); 
+document.fn.rpass.focus(); 
+return false; 
+} 
+else 
+if(document.fn.dob.value=="") 
+{ 
+alert("Enter your  date of birth"); 
+document.fn.dob.focus(); 
+return false; 
+} 
+else 
+return true; 
+} 
+</script> 
+<body bgcolor=silver> 
+<fieldset id="fs"> 
+<legend id="lg" align ="center"> 
+<h2><b>REGISTRATION FORM </b></h2> 
+</legend> 
+<font face="verdana"> 
+<form name=fn method=post onsubmit="return fd()" action="success.html"> 
+<table align="center"><br> 
+<tr><td> 
+<b> FIRST NAME</b></td> 
+<td> 
+<input type=text name="fin" class="textbox"><br></td></tr> 
+     <tr><td><b>LAST NAME</b></td> 
+     <td>     <input type=text name="ln" class="textbox"><br></td></tr> 
+<tr> 
+<td> <b>GENDER</td> 
+<td> MALE 
+<input type="radio" name="gender" value=male checked></td> 
+<td>FEMALE         
+<input type="radio" name="gender" value=female><br></td>  
+</td></tr> 
+ 
+<tr> 
+<td> 
+<b>PASSSWORD</b></td> 
+<td> 
+<input type=password name=pass class="textbox" ><br> 
+</td></tr> 
+ 
+<tr> 
+<td> 
+<b>RETYPE PASSWORD</b></td> 
+<td> 
+<input type=password name=rpass class="textbox" ><br> 
+</td></tr> 
+ 
+<tr> 
+<td> 
+<b>DATE OF BIRTH</b></td> 
+<td> 
+<input type=date name=dob class="textbox" ><br> 
+</td></tr> 
+<br> 
+<tr><td> 
+<br><input type="submit" name="submit " value=submit class="button"></td> 
+<td > 
+<br><input type=reset name=reset value=reset class="button"></td></tr>  
+</table> 
+<br> 
+</form> 
+</font><br> 
+</fieldset> 
+</body> 
+</html>                                                  
