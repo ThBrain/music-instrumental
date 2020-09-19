@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <head>
+        <title>Login Form</title> 
+    </head>
+    <body>
+        <span href="#" class="btn btn-default" id="toggle-login">Log in</span>
+        <div id="login">
+            <h1>Log in</h1>
+            <form>
+                <input type="userID" placeholder="UserID" />
+                <input type="password" placeholder="Password" />
+                <input type="submit" value="Log in" />
+            </form>
+        </div>
+      
+<div id="toggle-login">
+<form>
+<!-- FORM ELEMTN -->
+<input typre="text">
+</form>    
+</div>
+<input type="button" id="btn" value="toggle login" >
+        <script>
+            $("#btn").click(function(){
+$("#toggle-login").toggle();
+});
+        </script> 
+    </body>
+</html>
