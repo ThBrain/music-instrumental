@@ -1,0 +1,6 @@
+// Example 1
+var item = getArrayRandomElement(['name', 'name', 'name']);
+
+// Example 2
+var myArray = ['name', 'name', 'name'];
+var item = getArrayRandomElement(myArray);
