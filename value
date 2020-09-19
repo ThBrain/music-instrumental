@@ -1,0 +1,3 @@
+Selecting value with constant and length 
+
+var myArray = ['name', 'name', 'name'];
